@@ -2,5 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed solid black;
+    /* border: 1px solid black; */
 }
+
+html{
+    font-family: sans-serif;
+}
+
+header{
+    height: 100px;
+    background-color: #ff6900;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+ /* nav con due liste e logo centrale  */
+nav{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.logo img{
+    height: 35px;
+}
+
