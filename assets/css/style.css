@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 html{
@@ -21,8 +21,8 @@ header{
 
  /* nav con due liste e logo centrale  */
 nav{
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,17 +52,18 @@ main{
 }
 
 main section{
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
     /* margin-bottom: 50px; */
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    gap: 10px;  
 }    
 
 main section figure{
-    background-color: lightcoral;
-    flex-basis: 32%;
+    flex-wrap: calc(100% / 3);
     height: 700px;
+    
 
 }
 
@@ -70,7 +71,8 @@ main section figure{
 figure .container-position-relative img{
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    height: 600px;
     width: 100%;
 }
 
@@ -88,6 +90,7 @@ figure .container-position-relative img:hover{
     background-position: center;
     background-size: cover;
     height: 600px;
+    width: 100%;
 }
 
 .container-position-relative.seconda{
@@ -96,6 +99,7 @@ figure .container-position-relative img:hover{
     background-position: center;
     background-size: cover;
     height: 600px;
+    width: 100%;
 }
 
 .container-position-relative.terza{
@@ -104,6 +108,7 @@ figure .container-position-relative img:hover{
     background-position: center;
     background-size: cover;
     height: 600px;
+    width: 100%;
 }
 
 .container-position-relative.quarta{
@@ -214,15 +219,28 @@ figure .container-position-relative img:hover{
 /* footer */
 footer{
     background-color: #1a1a1a;
-    height: 100px;  
-    display: flex; 
-    
+    color: white;
+    height: 150px;
+     
 }
 
-footer div{
-    width: 70%;
-    margin: auto;
-    background-color: lightgreen;
-    /* display: flex; */
-    /* justify-content: space-between; */
+footer .container-footer-list{
+    width: 80%;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
+
+footer .container-footer-list section a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .container-footer-list section ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+/* esercizio terminato */
